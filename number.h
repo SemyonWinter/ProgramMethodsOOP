@@ -1,11 +1,7 @@
 #pragma once
 #include <fstream>
 #include <string>
-
-enum type {
-	COMPLEX,
-	FRACTAL
-};
+#include "number_types.h"
 
 class number 
 {
