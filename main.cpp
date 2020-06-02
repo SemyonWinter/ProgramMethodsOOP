@@ -19,7 +19,7 @@ int main(int argc, char* argv[]) {
 	container c{};
 	c.in(ifst);
 	cout << "Read. " << endl;
-	c.out(ofst);
+	c.out(ofst, type::COMPLEX);
 	cout << "Printed. " << endl;
 	system("pause");
 	return 0;
