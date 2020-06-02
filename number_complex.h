@@ -8,4 +8,5 @@ public:
 	double imag_double;
 	void out(std::ofstream &ofstr);
 	void in(std::ifstream &ifstr);
+	double new_function();
 };

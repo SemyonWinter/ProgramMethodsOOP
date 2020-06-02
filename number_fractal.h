@@ -8,4 +8,5 @@ public:
 	int denominator_int;
 	void out(std::ofstream &ofstr);
 	void in(std::ifstream &ifstr);
+	double new_function();
 };

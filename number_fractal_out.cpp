@@ -6,5 +6,6 @@ void number_fractal::out(std::ofstream & ofstr)
 	ofstr << "Type " << int(key + 1) << ": FRACTAL. ";
 	ofstr << "Numerator: " << numerator_int << ". ";
 	ofstr << "Denominator " << denominator_int << ". ";
+	ofstr << "Function " << new_function() << ". ";
 	ofstr << std::endl;
 }
