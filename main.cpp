@@ -4,6 +4,7 @@
 #include "container.h"
 #include "number_complex.h"
 #include "number_fractal.h"
+#include "number_polar.h"
 
 using namespace std;
 

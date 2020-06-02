@@ -3,5 +3,6 @@
 
 enum type {
 	COMPLEX,
-	FRACTAL
+	FRACTAL,
+	POLAR
 };

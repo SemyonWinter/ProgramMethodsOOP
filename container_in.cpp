@@ -1,6 +1,7 @@
 #include "container.h"
 #include "number_complex.h"
 #include "number_fractal.h"
+#include "number_polar.h"
 
 
 // —читывает все элементы из потока
@@ -18,7 +19,11 @@ void container::in(std::ifstream & ifstr)
 		} else if(type_key == 2) {
 			num_element = new number_fractal;
 			num_element->key = type::FRACTAL;
-		} else {
+		} else if (type_key == 3) {
+			num_element = new number_polar;
+			num_element->key = type::POLAR;
+		}
+		else {
 			return;
 		}
 		num_element->in(ifstr);
