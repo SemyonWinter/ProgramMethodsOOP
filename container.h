@@ -9,7 +9,7 @@ public:
 	element* begin;
 	element* end;
 	int size;
-
+	void sort();
 	container();
 	~container();
 };
