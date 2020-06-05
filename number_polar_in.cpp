@@ -1,10 +1,8 @@
 #include "number_polar.h"
 
 
-void number_polar::out(std::ofstream & ofstr)
+void number_polar::in(std::ifstream & ifstr)
 {
-	ofstr << "Type " << int(key + 1) << ": POLAR. ";
-	ofstr << "Real: " << angle << ". ";
-	ofstr << "Imag: " << dist << ". ";
-	ofstr << std::endl;
+	ifstr >> angle;
+	ifstr >> dist;
 }

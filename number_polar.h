@@ -6,6 +6,8 @@ class number_polar: public number
 public:
 	int angle;
 	double dist;
+	std::string measure;
 	void out(std::ofstream &ofstr);
 	void in(std::ifstream &ifstr);
+	double new_function();
 };
