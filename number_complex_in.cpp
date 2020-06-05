@@ -1,10 +1,8 @@
 #include "number_complex.h"
 
 
-void number_complex::out(std::ofstream & ofstr)
+void number_complex::in(std::ifstream & ifstr)
 {
-	ofstr << "Type " << int(key + 1) << ": COMPLEX. ";
-	ofstr << "Real: " << real_double << ". ";
-	ofstr << "Imag: " << imag_double << ". ";
-	ofstr << std::endl;
+	ifstr >> real_double;
+	ifstr >> imag_double;
 }
