@@ -22,6 +22,9 @@ int main(int argc, char* argv[]) {
 	cout << "Read. " << endl;
 	c.out(ofst, type::COMPLEX);
 	cout << "Printed. " << endl;
+	c.sort();
+	c.out(ofst);
+	cout << "Sorted. " << endl;
 	system("pause");
 	return 0;
 }
