@@ -1,8 +1,11 @@
 #include "number_complex.h"
 
 
-void number_complex::in(std::ifstream & ifstr)
+bool number_complex::in(std::ifstream & ifstr)
 {
+	if (ifstr.eof()) return false;
 	ifstr >> real_double;
+	if (ifstr.eof() || ifstr.fail() || ifstr.bad()) return false;
 	ifstr >> imag_double;
+	return (!ifstr.fail() && !ifstr.bad());
 }

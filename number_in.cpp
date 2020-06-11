@@ -23,7 +23,11 @@ number* number::in_one(std::ifstream & ifstr)
 	else {
 		return nullptr;
 	}
-	num_element->in(ifstr);
+	// Если провелилось считывание, то ошибка
+	if (!num_element->in(ifstr)) {
+		delete num_element;
+		return nullptr;
+	}
 	ifstr >> num_element->measure;
 	return num_element;
 }

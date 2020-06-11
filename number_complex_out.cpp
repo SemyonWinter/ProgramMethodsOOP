@@ -1,3 +1,4 @@
+#include "stdafx.h"
 #include "number_complex.h"
 
 

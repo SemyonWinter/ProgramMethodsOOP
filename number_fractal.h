@@ -8,6 +8,6 @@ public:
 	int denominator_int;
 	std::string measure;
 	void out(std::ofstream &ofstr);
-	void in(std::ifstream &ifstr);
+	bool in(std::ifstream &ifstr);
 	double new_function();
 };

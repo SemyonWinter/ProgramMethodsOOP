@@ -2,9 +2,6 @@
 #include <conio.h>
 #include <windows.h>
 #include "container.h"
-#include "number_complex.h"
-#include "number_fractal.h"
-#include "number_polar.h"
 
 using namespace std;
 
@@ -16,6 +13,14 @@ int main(int argc, char* argv[]) {
 	}
 	ifstream ifst(argv[1]);
 	ofstream ofst(argv[2]);
+	if (!ifst.is_open() || ifst.eof()) {
+		cout << "Error with input file." << endl;
+		return 1;
+	}
+	if (!ofst.is_open() || ofst.eof()) {
+		cout << "Error with output file." << endl;
+		return 1;
+	}
 	cout << "Begin" << endl;
 	container c{};
 	c.in(ifst);
