@@ -28,7 +28,6 @@ int main(int argc, char* argv[]) {
 	c.out(ofst);
 	cout << "Printed. " << endl;
 	c.multimet(ofst);
-	c.out(ofst);
 	cout << "Sorted. " << endl;
 	system("pause");
 	return 0;
