@@ -21,6 +21,7 @@ int main(int argc, char* argv[]) {
 	cout << "Read. " << endl;
 	c.out(ofst);
 	cout << "Printed. " << endl;
+	c.multimet(ofst);
 	system("pause");
 	return 0;
 }
