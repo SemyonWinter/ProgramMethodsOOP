@@ -10,4 +10,9 @@ public:
 	void out(std::ofstream &ofstr);
 	bool in(std::ifstream &ifstr);
 	double new_function();
+
+	void multi_met(number *n, std::ofstream &ofstr);
+	void multi_fra(std::ofstream &ofstr);
+	void multi_pol(std::ofstream &ofstr);
+	void multi_com(std::ofstream &ofstr);
 };

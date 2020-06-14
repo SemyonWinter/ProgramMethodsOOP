@@ -25,9 +25,9 @@ int main(int argc, char* argv[]) {
 	container c{};
 	c.in(ifst);
 	cout << "Read. " << endl;
-	c.out(ofst, type::COMPLEX);
+	c.out(ofst);
 	cout << "Printed. " << endl;
-	c.sort();
+	c.multimet(ofst);
 	c.out(ofst);
 	cout << "Sorted. " << endl;
 	system("pause");

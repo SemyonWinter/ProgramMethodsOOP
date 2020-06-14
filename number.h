@@ -14,5 +14,10 @@ public:
 	void out_one(std::ofstream & ofstr, type ignore = (type)-1);
 	static number* in_one(std::ifstream & ifstr);
 	virtual double new_function() = 0;
+
+	virtual void multi_met(number *n, std::ofstream &ofstr) = 0;
+	virtual void multi_fra(std::ofstream &ofstr) = 0;
+	virtual void multi_pol(std::ofstream &ofstr) = 0;
+	virtual void multi_com(std::ofstream &ofstr) = 0;
 	type key;
 };
