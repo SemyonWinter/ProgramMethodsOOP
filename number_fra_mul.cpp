@@ -4,5 +4,5 @@
 
 void number_fractal::multi_met(number *n, std::ofstream &ofstr)
 {
-	n->multi_pol(ofstr);
+	n->multi_fra(ofstr);
 }
